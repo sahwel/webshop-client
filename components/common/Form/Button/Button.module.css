@@ -1,0 +1,14 @@
+@tailwind components;
+
+
+@layer components {
+    .button {
+        @apply w-full p-3 bg-button-light rounded text-white drop-shadow-button-ligth
+    }
+
+    :global(.dark) .button{
+        @apply bg-button-dark text-text-dark drop-shadow-button-dark
+    }
+    
+}
+    

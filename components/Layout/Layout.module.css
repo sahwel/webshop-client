@@ -1,0 +1,14 @@
+@tailwind components;
+
+
+@layer components {
+    .layout{
+        @apply bg-main-light p-5 min-h-screen text-text-light font-poppins
+    }
+
+    :global(.dark) .layout{
+        @apply text-text-dark bg-main-dark 
+    }
+    
+}
+    

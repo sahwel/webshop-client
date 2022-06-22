@@ -1,0 +1,24 @@
+
+@tailwind components;
+
+@layer components {
+    .theme_sececltor {
+        @apply grid grid-cols-2 z-50 cursor-pointer bg-white absolute right-5  rounded-full border-2 border-theme-border-light
+    }  
+    
+    .theme_sun{
+        @apply text-orange-600 
+    }
+
+    .theme_moon{
+        @apply text-gray-400 rotate-[255deg]
+    }
+
+    .theme_moon_highlited{
+        @apply bg-[#303841]
+    }
+
+    .theme_sun_highlited{
+        @apply bg-orange-200
+    }
+}

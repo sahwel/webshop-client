@@ -1,0 +1,29 @@
+
+@tailwind components;
+
+
+@layer components {
+
+
+    .input_container{
+        @apply relative text-input-light 
+    }
+
+    .input{
+       @apply p-3 w-full rounded-md pr-16  placeholder:select-none placeholder:text-input-light-placeholer border-2 border-input-border
+    }
+
+    .input_icon{
+        @apply absolute  top-1/2 right-3 -translate-y-1/2 transform
+    }
+   
+
+    :global(.dark) .input_container{
+        @apply text-input-dark
+    }
+    
+    :global(.dark) .input{
+        @apply placeholder:text-input-dark-placeholer 
+    }
+}
+    

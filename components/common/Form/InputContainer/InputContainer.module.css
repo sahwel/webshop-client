@@ -1,0 +1,9 @@
+@tailwind components;
+
+@layer components {
+    .input_container{
+        @apply grid gap-5
+    }
+
+}
+    
