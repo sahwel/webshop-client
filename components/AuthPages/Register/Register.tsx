@@ -13,7 +13,7 @@ const Register = () => {
 
   return (
     <div>
-      <form className="pt-20 grid gap-16 ">
+      <form className="pt-20 grid gap-12 ">
         <RegisterHeader />
         <RegisterInputs section={section} />
         <RegisterFooter

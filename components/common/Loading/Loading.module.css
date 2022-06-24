@@ -1,0 +1,18 @@
+@tailwind components;
+
+
+@layer components {
+    .container{
+        @apply flex space-x-3  items-center  justify-center
+    }
+
+    .loading {
+        @apply mr-2 inline h-12 w-12 animate-spin fill-text-light  text-main-light
+    }
+
+    :global(.dark) .loading{
+        @apply text-main-dark fill-text-dark
+    }
+    
+}
+    

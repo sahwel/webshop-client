@@ -13,18 +13,21 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 const Input: FunctionComponent<InputProps> = ({
   type,
-  placeholder,
   className,
   icon,
   iconClassName,
   onIconClick,
+  ...props
 }) => {
   return (
     <div className={styles.input_container}>
       <input
         type={type}
-        placeholder={placeholder}
-        className={cl(styles.input, className)}
+        {...props}
+        className={cl(
+          type === 'checkbox' ? styles.checkbox : styles.input,
+          className
+        )}
       />
       {icon &&
         (onIconClick !== undefined ? (

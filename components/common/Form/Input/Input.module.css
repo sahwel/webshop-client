@@ -14,9 +14,16 @@
     }
 
     .input_icon{
-        @apply absolute  top-1/2 right-3 -translate-y-1/2 transform
+        @apply absolute  top-1/2 right-3 -translate-y-1/2 transform 
     }
    
+    .checkbox {
+        @apply w-6 h-6 accent-white  
+    }
+
+    .checkbox:checked::before{
+        @apply  bg-green-600 text-green-500
+        }
 
     :global(.dark) .input_container{
         @apply text-input-dark
