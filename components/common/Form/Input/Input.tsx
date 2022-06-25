@@ -30,6 +30,7 @@ const Input: FunctionComponent<InputProps> = ({
         )}
       />
       {icon &&
+        type !== 'checkbox' &&
         (onIconClick !== undefined ? (
           <FontAwesomeIcon
             icon={icon}

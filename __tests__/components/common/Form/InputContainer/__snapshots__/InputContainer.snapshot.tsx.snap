@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputContainer snapshot renders InputContainer unchanged 1`] = `
+<div>
+  <div
+    class="input_container"
+  >
+    <p>
+      test children
+    </p>
+  </div>
+</div>
+`;
