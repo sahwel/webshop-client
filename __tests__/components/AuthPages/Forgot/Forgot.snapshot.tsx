@@ -1,15 +1,14 @@
 import { render, renderHook, RenderHookResult } from '@testing-library/react';
-import LoginHeader from '@/components/AuthPages/Login/LoginHeader';
-import AuthPagesContainer from '@/components/AuthPages/AuthPagesContainer';
 import { useTheme } from '@/components/common/ThemeSelector/ThemeProvider';
 import {
   mockUseThemeSelector,
   themeSelectorWrapper,
-} from '../../../testUtils/MockThemeSelector';
+} from '../../../../testUtils/MockThemeSelector';
 import React from 'react';
+import Forgot from '@/pages/forgot';
 React.useContext = mockUseThemeSelector;
 
-describe('AuhtPahtesContainer Snapshot', () => {
+describe('Forgot Snapshot', () => {
   let result: RenderHookResult<any, any>;
   beforeEach(() => {
     result = renderHook(() => useTheme(), {
@@ -17,8 +16,8 @@ describe('AuhtPahtesContainer Snapshot', () => {
     });
   });
 
-  it('renders AuhtPahtesContainer unchanged', () => {
-    const { container } = render(<AuthPagesContainer children={'test'} />);
+  it('renders Forgot unchanged', () => {
+    const { container } = render(<Forgot />);
     expect(container).toMatchSnapshot();
   });
 });

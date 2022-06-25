@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Forgot Snapshot renders Forgot unchanged 1`] = `
+<div>
+  <div
+    class="auth_pages_container"
+  >
+    <div
+      class="blob_container"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      >
+        <img
+          alt="blob"
+          class="blob"
+          data-nimg="fill"
+          decoding="async"
+          sizes="100vw"
+          src="/blobs/light/login-register/blob.svg"
+          srcset="/blobs/light/login-register/blob.svg 640w, /blobs/light/login-register/blob.svg 750w, /blobs/light/login-register/blob.svg 828w, /blobs/light/login-register/blob.svg 1080w, /blobs/light/login-register/blob.svg 1200w, /blobs/light/login-register/blob.svg 1920w, /blobs/light/login-register/blob.svg 2048w, /blobs/light/login-register/blob.svg 3840w"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+      </span>
+    </div>
+    <form
+      class="pt-20 grid gap-16 "
+    >
+      <h1
+        class="text-[300%]"
+      >
+        Create your new password
+      </h1>
+      <div
+        class="input_container"
+      >
+        <p>
+          Enter the email associated with your account and we’ll send you an email with instructions to reset your password
+        </p>
+        <div
+          class="input_container"
+        >
+          <input
+            class="input"
+            placeholder="Email"
+            type="text"
+          />
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-envelope input_icon icon-7"
+            data-icon="envelope"
+            data-prefix="far"
+            focusable="false"
+            role="img"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <button
+          class="button"
+          type="submit"
+        >
+          Send email
+        </button>
+        <a
+          class="text-center block text-sm mt-2 cursor-pointer"
+          href="/login"
+        >
+          Back
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+`;
