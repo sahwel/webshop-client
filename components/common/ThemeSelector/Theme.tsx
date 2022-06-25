@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react';
 import cl from 'classnames';
-import styles from './theme.module.css';
+import styles from './Theme.module.css';
 
 interface ThemeProps {
   children?: ReactNode;
