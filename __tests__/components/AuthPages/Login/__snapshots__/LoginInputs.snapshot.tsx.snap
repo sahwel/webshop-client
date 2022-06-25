@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders LoginInputs unchanged 1`] = `
+exports[`LoginInputs snapshot renders LoginInputs unchanged 1`] = `
 <div>
   <div
     class="input_container"

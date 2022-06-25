@@ -1,15 +1,15 @@
 import { render, renderHook } from '@testing-library/react';
-import Login from '@/pages/login';
+import Layout from '@/components/Layout/Layout';
 import {
   mockUseThemeSelector,
   themeSelectorWrapper,
-} from '../../../testUtils/MockThemeSelector';
-import { useTheme } from '@/components/common/ThemeSelector/ThemeProvider';
+} from '../../../../testUtils/MockThemeSelector';
 import React from 'react';
+import { useTheme } from '@/components/common/ThemeSelector/ThemeProvider';
 
 React.useContext = mockUseThemeSelector;
 
-describe('login', () => {
+describe('Layout snapshot', () => {
   let _result;
   beforeEach(() => {
     const { result } = renderHook(() => useTheme(), {
@@ -18,8 +18,8 @@ describe('login', () => {
 
     _result = result;
   });
-  it('renders homepage unchanged', () => {
-    const { container } = render(<Login />);
+  it('renders LoginFooter unchanged', () => {
+    const { container } = render(<Layout children={<p>test children</p>} />);
     expect(container).toMatchSnapshot();
   });
 });
