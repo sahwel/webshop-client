@@ -32,8 +32,8 @@ const RegisterFooter: FunctionComponent<RegisterFooterProps> = ({
         onClick={sectionChangeToFoward}
       />
       {section === Section.firstSection && (
-        <Link href="/login">
-          <p className="text-center text-sm mt-2 cursor-pointer">Back</p>
+        <Link href="/login" passHref>
+          <a className="text-center block text-sm mt-2 cursor-pointer">Back</a>
         </Link>
       )}
       {section >= Section.secondSection && (
