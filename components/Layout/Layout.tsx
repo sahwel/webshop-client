@@ -1,5 +1,5 @@
 import { FunctionComponent, ReactNode } from 'react';
-import ThemeSelector from '../ThemeSelector/ThemeSelector';
+import ThemeSelector from '../common/ThemeSelector/ThemeSelector';
 import styles from './Layout.module.css';
 
 interface LayoutProps {

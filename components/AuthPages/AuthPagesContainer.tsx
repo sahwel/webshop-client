@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FunctionComponent, ReactNode } from 'react';
-import { useTheme } from '../ThemeSelector/ThemeProvider';
+import { useTheme } from '../common/ThemeSelector/ThemeProvider';
 import styles from './AuthPagesContainer.module.css';
 
 interface AuthPagesContainerProps {
