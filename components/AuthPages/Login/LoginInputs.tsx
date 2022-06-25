@@ -25,10 +25,10 @@ const LoginInputs = ({}) => {
           iconClassName="cursor-pointer"
           onIconClick={handleIsPasswordShowChange}
         />
-        <Link href="/forgot">
-          <p className="text-right text-sm cursor-pointer mt-1">
-            Forgot you password?
-          </p>
+        <Link href="/forgot" passHref>
+          <a className="text-right text-sm block cursor-pointer mt-1">
+            Forgot your password?
+          </a>
         </Link>
       </div>
     </InputContainer>
