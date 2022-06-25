@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuhtPahtesContainer Snapshot renders LoginHeader unchanged 1`] = `
+<div>
+  <div
+    class="auth_pages_container"
+  >
+    <div
+      class="blob_container"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      >
+        <img
+          alt="blob"
+          class="blob"
+          data-nimg="fill"
+          decoding="async"
+          sizes="100vw"
+          src="/blobs/light/login-register/blob.svg"
+          srcset="/blobs/light/login-register/blob.svg 640w, /blobs/light/login-register/blob.svg 750w, /blobs/light/login-register/blob.svg 828w, /blobs/light/login-register/blob.svg 1080w, /blobs/light/login-register/blob.svg 1200w, /blobs/light/login-register/blob.svg 1920w, /blobs/light/login-register/blob.svg 2048w, /blobs/light/login-register/blob.svg 3840w"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+      </span>
+    </div>
+    test
+  </div>
+</div>
+`;
