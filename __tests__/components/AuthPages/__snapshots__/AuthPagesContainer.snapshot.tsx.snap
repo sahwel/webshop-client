@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AuhtPahtesContainer Snapshot renders LoginHeader unchanged 1`] = `
+exports[`AuhtPahtesContainer Snapshot renders AuhtPahtesContainer unchanged 1`] = `
 <div>
   <div
     class="auth_pages_container"

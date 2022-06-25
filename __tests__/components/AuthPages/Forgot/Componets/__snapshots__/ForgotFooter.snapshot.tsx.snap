@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForgotFooter Snapshot renders ForgotFooter unchanged 1`] = `
+<div>
+  <div>
+    <button
+      class="button"
+      type="submit"
+    >
+      Send email
+    </button>
+    <a
+      class="text-center block text-sm mt-2 cursor-pointer"
+      href="/login"
+    >
+      Back
+    </a>
+  </div>
+</div>
+`;

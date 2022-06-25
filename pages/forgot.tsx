@@ -1,7 +1,8 @@
+import Forgot from '@/components/AuthPages/Forgot/Forgot';
 import React from 'react';
 
 const forgot = () => {
-  return <div>forgot</div>;
+  return <Forgot />;
 };
 
 export default forgot;

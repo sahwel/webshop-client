@@ -10,7 +10,7 @@ exports[`LoginFooter snapshot renders LoginFooter unchanged 1`] = `
       Sign in
     </button>
     <a
-      class="text-center mt-2 cursor-pointer"
+      class="text-center mt-2 cursor-pointer block"
       href="/register"
     >
       Don’t have an account? 

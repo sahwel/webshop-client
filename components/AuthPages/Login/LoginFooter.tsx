@@ -6,7 +6,7 @@ const LoginFooter = () => {
     <div>
       <Button children="Sign in" type="submit" />
       <Link href="/register" passHref>
-        <a className="text-center mt-2 cursor-pointer">
+        <a className="text-center mt-2 cursor-pointer block">
           Don’t have an account? <span className="font-bold">Register</span>
         </a>
       </Link>

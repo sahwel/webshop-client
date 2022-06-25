@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import AuthPagesContainer from '../AuthPagesContainer';
 import RegisterFooter from './RegisterFooter';
 import RegisterHeader from './RegisterHeader';
 import RegisterInputs from './RegisterInputs';
@@ -12,7 +13,7 @@ const Register = () => {
   }, []);
 
   return (
-    <div>
+    <AuthPagesContainer>
       <form className="pt-20 grid gap-12 ">
         <RegisterHeader />
         <RegisterInputs section={section} />
@@ -21,7 +22,7 @@ const Register = () => {
           section={section}
         />
       </form>
-    </div>
+    </AuthPagesContainer>
   );
 };
 
