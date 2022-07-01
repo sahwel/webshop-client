@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginFooter snapshot renders LoginFooter unchanged 1`] = `
+<div>
+  <div>
+    <button
+      class="button"
+      type="submit"
+    >
+      Sign in
+    </button>
+    <a
+      class="text-center mt-2 cursor-pointer block"
+      href="/register"
+    >
+      Don’t have an account? 
+      <span
+        class="font-bold"
+      >
+        Register
+      </span>
+    </a>
+  </div>
+</div>
+`;
