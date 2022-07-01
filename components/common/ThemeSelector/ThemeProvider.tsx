@@ -3,12 +3,12 @@ import {
   ReactNode,
   useContext,
   useEffect,
-  useLayoutEffect,
   useMemo,
   useState,
 } from 'react';
 import { ThemeContext, ThemeContextModel } from './ThemeContext';
 import { Themes } from './definitions';
+import Loading from '../Loading/Loading';
 
 interface ThemeProviderProps {
   children?: ReactNode;
@@ -16,8 +16,8 @@ interface ThemeProviderProps {
 
 const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useState<Themes>('light');
-
-  useLayoutEffect(() => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  useEffect(() => {
     // todo: get alternative solution
     const theme = localStorage.theme ? localStorage.theme : 'light';
 
@@ -27,7 +27,7 @@ const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }) => {
       document.documentElement.classList.remove('dark');
     }
     setCurrentTheme(theme);
-
+    setIsLoaded(true);
     return () => {};
   }, []);
   const contextValue: ThemeContextModel = useMemo(
@@ -51,7 +51,7 @@ const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }) => {
     }),
     [currentTheme]
   );
-
+  if (!isLoaded) return null;
   return (
     <ThemeContext.Provider value={contextValue}>
       {children}
