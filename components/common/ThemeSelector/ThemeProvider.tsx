@@ -18,6 +18,7 @@ const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useState<Themes>('light');
 
   useLayoutEffect(() => {
+    // todo: get alternative solution
     const theme = localStorage.theme ? localStorage.theme : 'light';
 
     if (theme === 'dark') {
