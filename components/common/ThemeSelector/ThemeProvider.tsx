@@ -17,7 +17,7 @@ interface ThemeProviderProps {
 const ThemeProvider: FunctionComponent<ThemeProviderProps> = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useState<Themes>('light');
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const theme = localStorage.theme ? localStorage.theme : 'light';
 
     if (theme === 'dark') {
