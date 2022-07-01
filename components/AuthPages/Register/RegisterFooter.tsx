@@ -27,8 +27,8 @@ const RegisterFooter: FunctionComponent<RegisterFooterProps> = ({
   return (
     <div>
       <Button
-        children="Next"
-        type={section >= Section.secondSection ? 'submit' : 'button'}
+        children={section > Section.secondSection ? 'Sign up' : 'Next'}
+        type={section > Section.secondSection ? 'submit' : 'button'}
         onClick={sectionChangeToFoward}
       />
       {section === Section.firstSection && (

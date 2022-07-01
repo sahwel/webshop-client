@@ -1,5 +1,4 @@
 import { render, renderHook, RenderHookResult } from '@testing-library/react';
-import LoginHeader from '@/components/AuthPages/Login/LoginHeader';
 import AuthPagesContainer from '@/components/AuthPages/AuthPagesContainer';
 import { useTheme } from '@/components/common/ThemeSelector/ThemeProvider';
 import {
