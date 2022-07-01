@@ -8,7 +8,6 @@ import { Section } from './services/definitions';
 const Register = () => {
   const [section, setSection] = useState<Section>(Section.firstSection);
   const handleSectionChange = useCallback((toFoward: boolean) => {
-    console.log('asd');
     setSection((oldSection) => oldSection + (toFoward ? 1 : -1));
   }, []);
 

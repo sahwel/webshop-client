@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterFooter Snapshot with first section renders RegisterFooter with first sectionunchanged 1`] = `
+<div>
+  <div>
+    <button
+      class="button"
+      type="button"
+    >
+      Next
+    </button>
+    <a
+      class="text-center block text-sm mt-2 cursor-pointer"
+      href="/login"
+    >
+      Back
+    </a>
+  </div>
+</div>
+`;
+
+exports[`RegisterFooter Snapshot with second section renders RegisterFooter with second sectionunchanged 1`] = `
+<div>
+  <div>
+    <button
+      class="button"
+      type="button"
+    >
+      Next
+    </button>
+    <p
+      class="text-center text-sm mt-2 cursor-pointer"
+    >
+      Back
+    </p>
+  </div>
+</div>
+`;
+
+exports[`RegisterFooter Snapshot with third section renders RegisterFooter with third sectionunchanged 1`] = `
+<div>
+  <div>
+    <button
+      class="button"
+      type="submit"
+    >
+      Sign up
+    </button>
+    <p
+      class="text-center text-sm mt-2 cursor-pointer"
+    >
+      Back
+    </p>
+  </div>
+</div>
+`;
